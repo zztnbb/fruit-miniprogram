@@ -1,0 +1,60 @@
+<view class="container">
+  <!-- 搜索框 -->
+  <view class="search-box">
+    <input class="search-input" 
+           placeholder="搜索水果..." 
+           bindinput="onSearchInput"
+           value="{{searchKeyword}}"/>
+  </view>
+  
+  <!-- 搜索结果展示 -->
+  <view class="search-results" wx:if="{{searchResults.length > 0}}">
+    <view class="section-title">搜索结果</view>
+    <view class="fruits-grid">
+      <view class="fruit-card" wx:for="{{searchResults}}" wx:key="id" bindtap="goToDetail" data-fruit="{{item}}">
+        <image class="fruit-image" src="{{item.image}}" mode="aspectFill"></image>
+        <view class="fruit-info">
+          <text class="fruit-name">{{item.name}}</text>
+          <view class="fruit-tags">
+            <text class="tag" wx:for="{{item.nutrition_tags}}" wx:key="*this">{{item}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 已选标签展示 -->
+  <view class="tag-section" wx:if="{{selectedTags.length > 0}}">
+    <view class="section-title">已选择的标签</view>
+    <view class="tag-list">
+      <view class="tag-item" wx:for="{{selectedTags}}" wx:key="id">
+        <text class="tag-name">{{item.name}}</text>
+        <text class="tag-function">{{item.function}}</text>
+      </view>
+    </view>
+    <button class="modify-btn" bindtap="goToTags">修改标签</button>
+  </view>
+  <view class="no-tags" wx:else>
+    <text>您还没有选择任何标签</text>
+    <button class="modify-btn" bindtap="goToTags">选择标签</button>
+  </view>
+
+  <!-- 推荐水果展示 -->
+  <view class="fruits-section" wx:if="{{recommendedFruits.length > 0}}">
+    <view class="section-title">推荐水果</view>
+    <view class="fruits-grid">
+      <view class="fruit-card" wx:for="{{recommendedFruits}}" wx:key="id" bindtap="goToDetail" data-fruit="{{item}}">
+        <image class="fruit-image" src="{{item.image}}" mode="aspectFill"></image>
+        <view class="fruit-info">
+          <text class="fruit-name">{{item.name}}</text>
+          <view class="fruit-tags">
+            <text class="tag" wx:for="{{item.nutrition_tags}}" wx:key="*this">{{item}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="no-fruits" wx:else>
+    <text>请先选择标签以获取推荐水果</text>
+  </view>
+</view> 

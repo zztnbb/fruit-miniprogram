@@ -1,0 +1,571 @@
+.container {
+  padding: 20rpx;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.header {
+  background: #fff;
+  padding: 30rpx;
+  border-radius: 12rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.05);
+}
+
+.profile-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+  padding-left: 10rpx;
+  border-left: 8rpx solid #4CAF50;
+}
+
+.edit-btn {
+  color: #4CAF50;
+  font-size: 28rpx;
+  padding: 10rpx 20rpx;
+  border-radius: 30rpx;
+  background: #E8F5E9;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16rpx;
+}
+
+.no-tags {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 40rpx 20rpx;
+  text-align: center;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.05);
+}
+
+.no-tags text {
+  font-size: 28rpx;
+  color: #999;
+  display: block;
+  margin-bottom: 20rpx;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  background: #E8F5E9;
+  padding: 12rpx 20rpx;
+  border-radius: 30rpx;
+}
+
+.tag-icon {
+  margin-right: 8rpx;
+  font-size: 28rpx;
+}
+
+.tag-name {
+  font-size: 28rpx;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.tag-function {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.modify-btn {
+  background: #4CAF50;
+  color: #fff;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  padding: 16rpx 0;
+  width: 100%;
+  border: none;
+}
+
+.feature-section {
+  margin-bottom: 20rpx;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 30rpx;
+  border-radius: 12rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+}
+
+.feature-icon {
+  font-size: 48rpx;
+  margin-right: 20rpx;
+}
+
+.feature-content {
+  flex: 1;
+}
+
+.feature-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 8rpx;
+}
+
+.feature-desc {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.budget-card {
+  background: linear-gradient(135deg, #4CAF50 0%, #81C784 100%);
+}
+
+.budget-card .feature-title,
+.budget-card .feature-desc {
+  color: #fff;
+}
+
+.season-card {
+  background: linear-gradient(135deg, #FF9800 0%, #FFB74D 100%);
+}
+
+.season-card .feature-title,
+.season-card .feature-desc {
+  color: #fff;
+}
+
+.section {
+  background: #fff;
+  padding: 30rpx;
+  border-radius: 12rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.05);
+}
+
+.section-subtitle {
+  font-size: 26rpx;
+  color: #666;
+  margin-top: 8rpx;
+  display: block;
+}
+
+.fruits-section {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.05);
+}
+
+.fruits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20rpx;
+}
+
+.fruit-card {
+  background: #f8f8f8;
+  border-radius: 12rpx;
+  overflow: hidden;
+  box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.1);
+}
+
+.fruit-image {
+  width: 100%;
+  height: 200rpx;
+  background: #eee;
+}
+
+.fruit-info {
+  padding: 16rpx;
+}
+
+.fruit-name {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 8rpx;
+}
+
+.fruit-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rpx;
+}
+
+.tag {
+  font-size: 22rpx;
+  color: #4CAF50;
+  background: rgba(76, 175, 80, 0.1);
+  padding: 4rpx 12rpx;
+  border-radius: 4rpx;
+}
+
+.no-fruits {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 40rpx 20rpx;
+  text-align: center;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.05);
+}
+
+.no-fruits text {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.health-tags {
+  padding: 30rpx;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 30rpx;
+  text-align: center;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16rpx;
+  margin-bottom: 20rpx;
+}
+
+.tag-item {
+  background: #E8F5E9;
+  border-radius: 8rpx;
+  padding: 12rpx 20rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 4rpx;
+}
+
+.tag-item.selected {
+  background: #4CAF50;
+  transform: scale(1.05);
+}
+
+.tag-item.selected .tag-name {
+  color: #fff;
+}
+
+.recommendations {
+  margin-top: 30rpx;
+}
+
+.card-section {
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.08);
+}
+
+.section-header {
+  margin-bottom: 20rpx;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.title-icon {
+  font-size: 36rpx;
+  margin-right: 10rpx;
+}
+
+.subtitle {
+  font-size: 24rpx;
+  color: #666;
+  margin-top: 8rpx;
+}
+
+.scroll-container {
+  width: 100%;
+}
+
+.card-content {
+  display: flex;
+  padding: 10rpx 0;
+  width: fit-content;
+}
+
+.fruit-item {
+  width: 220rpx;
+  margin-right: 20rpx;
+  background: #fff;
+  border-radius: 16rpx;
+  overflow: hidden;
+  transition: all 0.3s;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.05);
+}
+
+.fruit-item:active {
+  transform: scale(0.98);
+}
+
+.fruit-item image {
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 16rpx 16rpx 0 0;
+}
+
+.fruit-tag {
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  color: #4CAF50;
+  background: rgba(76, 175, 80, 0.1);
+  padding: 4rpx 12rpx;
+  border-radius: 8rpx;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+/* 健康标签特殊样式 */
+.tag-item[data-tag="diabetes"] { background: #E3F2FD; }
+.tag-item[data-tag="diet"] { background: #F3E5F5; }
+.tag-item[data-tag="pregnancy"] { background: #FFF3E0; }
+.tag-item[data-tag="cold"] { background: #E8F5E9; }
+.tag-item[data-tag="hypertension"] { background: #FFEBEE; }
+.tag-item[data-tag="heart"] { background: #FCE4EC; }
+.tag-item[data-tag="digestion"] { background: #F1F8E9; }
+.tag-item[data-tag="immunity"] { background: #FFF8E1; }
+.tag-item[data-tag="none"] { background: #ECEFF1; }
+
+.tag-item.selected[data-tag] {
+  background: #4CAF50;
+  color: #fff;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #666;
+  font-size: 28rpx;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30rpx;
+}
+
+/* 卡片通用样式 */
+.card {
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.05);
+}
+
+.card-header {
+  margin-bottom: 20rpx;
+}
+
+.card-subtitle {
+  font-size: 24rpx;
+  color: #999;
+}
+
+/* 水果列表样式 */
+.fruit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.fruit-item {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  background: #f9f9f9;
+  border-radius: 15rpx;
+  transition: all 0.3s;
+}
+
+.fruit-item:active {
+  transform: scale(0.98);
+}
+
+.fruit-image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+}
+
+.fruit-info {
+  flex: 1;
+}
+
+.fruit-name {
+  font-size: 32rpx;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+/* 健康卡片特殊样式 */
+.health-card {
+  border-left: 8rpx solid #4CAF50;
+}
+
+.fruit-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rpx;
+}
+
+.tag {
+  font-size: 24rpx;
+  color: #4CAF50;
+  background: rgba(76, 175, 80, 0.1);
+  padding: 4rpx 12rpx;
+  border-radius: 6rpx;
+}
+
+/* 价格卡片特殊样式 */
+.price-card {
+  border-left: 8rpx solid #FF9800;
+}
+
+.price-info {
+  display: flex;
+  align-items: center;
+  gap: 10rpx;
+}
+
+.price {
+  font-size: 32rpx;
+  color: #FF9800;
+  font-weight: bold;
+}
+
+.trend {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.trend.up {
+  color: #f44336;
+}
+
+.trend.down {
+  color: #4CAF50;
+}
+
+/* 猎奇卡片特殊样式 */
+.novelty-card {
+  border-left: 8rpx solid #9C27B0;
+}
+
+.origin {
+  font-size: 24rpx;
+  color: #9C27B0;
+  background: rgba(156, 39, 176, 0.1);
+  padding: 4rpx 12rpx;
+  border-radius: 6rpx;
+  display: inline-block;
+}
+
+.tag-section {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.05);
+}
+
+.tag-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.tag-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.tag-action {
+  font-size: 28rpx;
+  color: #07c160;
+}
+
+.selected-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16rpx;
+}
+
+.tag-chip {
+  display: flex;
+  align-items: center;
+  background: rgba(7,193,96,0.1);
+  border-radius: 30rpx;
+  padding: 10rpx 20rpx;
+}
+
+.tag-icon {
+  font-size: 32rpx;
+  margin-right: 8rpx;
+}
+
+.tag-name {
+  font-size: 26rpx;
+  color: #07c160;
+}
+
+.section-subtitle {
+  font-size: 26rpx;
+  color: #666;
+  margin-top: 6rpx;
+  display: block;
+}
+
+.search-box {
+  padding: 20rpx;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.search-input {
+  width: 100%;
+  height: 80rpx;
+  background-color: #f5f5f5;
+  border-radius: 40rpx;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+}
+
+.search-results {
+  margin-top: 20rpx;
+} 

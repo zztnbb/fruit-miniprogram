@@ -1,0 +1,97 @@
+<view class="container">
+  <!-- 第一屏：决策关键信息 -->
+  <view class="decision-screen"> 
+    <!-- <image class="fruit-image" src="{{fruitData.image}}" mode="aspectFill"></image> -->
+    <view class="fruit-name">{{fruitData.name}}</view>
+    
+
+    
+    <!-- 健康标签提示 -->
+    <!-- <view class="health-alert {{isHealthy ? 'healthy' : 'warning'}}">
+      <text class="alert-icon">{{isHealthy ? '✅' : '❗️'}}</text>
+      <text class="alert-text">{{healthAlert}}</text>
+    </view> -->
+
+    <!-- 应季时间 -->
+    <view class="season-section">
+      <view class="section-title">
+        <text class="title-icon">📅</text>
+        <text>应季时间</text>
+      </view>
+      <view class="season-text">{{fruitData.season}}</view>
+    </view>
+  </view>
+
+  <!-- 第二屏：科学指南 -->
+  <view class="science-screen">
+    <!-- 营养量化 -->
+    <view class="nutrition-section">
+      <view class="section-title">
+        <text class="title-icon">🍎</text>
+        <text>营养量化</text>
+      </view>
+      <view class="nutrition-list">
+        <view class="nutrition-item" wx:for="{{nutritionData}}" wx:key="name">
+          <view class="nutrition-header">
+            <text class="nutrition-name">{{item.name}}</text>
+            <text class="nutrition-percentage">{{item.percentage}}%</text>
+          </view>
+          <view class="progress-bar">
+            <view class="progress" style="width: {{item.percentage}}"></view>
+          </view>
+          <text class="nutrition-desc">{{item.description}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 食用建议 -->
+    <view class="consumption-section">
+      <view class="section-title">
+        <text class="title-icon">🍽️</text>
+        <text>食用建议</text>
+      </view>
+      <view class="consumption-list">
+        <view class="consumption-item">
+          <text class="consumption-title">单次用量</text>
+          <text class="consumption-desc">{{fruitData.consumption_advice}}</text>
+        </view>
+        <view class="consumption-item">
+          <text class="consumption-title">食用频率</text>
+          <text class="consumption-desc">{{fruitData.consumption_frequency || '建议每天食用1次，可根据个人情况调整'}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 禁忌说明 -->
+    <view class="contraindication-section">
+      <view class="section-title">
+        <text class="title-icon">⚠️</text>
+        <text>禁忌说明</text>
+      </view>
+      <view class="contraindication-list">
+        <view class="contraindication-item" 
+              wx:for="{{contraindicationData}}" 
+              wx:key="title">
+          <view class="contraindication-header">
+            <text class="condition-icon">{{item.icon}}</text>
+            <text class="condition-title">{{item.title}}</text>
+          </view>
+          <text class="condition-desc">{{item.description}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 第三屏：实用技巧 -->
+  <view class="section tips-section">
+    <view class="section-title">选购技巧</view>
+    <view class="tips-content">
+      {{fruitData.selection_tips}}
+    </view>
+
+    <view class="section-title">存储方法</view>
+    <view class="storage-content">
+      {{fruitData.storage_tips}}
+    </view>
+  </view>
+</view> 

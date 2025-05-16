@@ -1,0 +1,247 @@
+.container {
+  background: #f8f8f8;
+  min-height: 100vh;
+}
+
+/* 第一屏样式 */
+.decision-screen {
+  background: #fff;
+  border-radius: 0 0 30rpx 30rpx;
+  padding-bottom: 40rpx;
+  margin-bottom: 30rpx;
+}
+
+.fruit-image {
+  width: 750rpx;
+  height: 750rpx;
+  object-fit: contain;
+  background: #f8f8f8;
+}
+
+.fruit-name {
+  font-size: 56rpx;
+  font-weight: bold;
+  text-align: center;
+  padding: 60rpx 0;
+  color:honeydew;
+  background:green;
+  margin: 20rpx;
+  border-radius: 16rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.1);
+}
+
+.health-alert {
+  margin: 20rpx;
+  padding: 20rpx;
+  border-radius: 16rpx;
+  display: flex;
+  align-items: center;
+}
+
+.health-alert.healthy {
+  background: rgba(76, 175, 80, 0.1);
+  color: #2E7D32;
+}
+
+.health-alert.warning {
+  background: rgba(244, 67, 54, 0.1);
+  color: #C62828;
+}
+
+.alert-icon {
+  font-size: 40rpx;
+  margin-right: 16rpx;
+}
+
+.alert-text {
+  font-size: 28rpx;
+  flex: 1;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  margin: 30rpx 20rpx 20rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.title-icon {
+  font-size: 36rpx;
+  margin-right: 10rpx;
+}
+
+/* 应季时间样式 */
+.season-section {
+  margin: 0 20rpx;
+}
+
+.season-text {
+  background: #f5f5f5;
+  padding: 20rpx;
+  border-radius: 16rpx;
+  font-size: 28rpx;
+  color: #666;
+  text-align: center;
+}
+
+/* 第二屏样式 */
+.science-screen {
+  background: #fff;
+  border-radius: 30rpx;
+  padding: 30rpx 20rpx;
+  margin: 0 20rpx 30rpx;
+}
+
+/* 营养量化 */
+.nutrition-list {
+  margin-top: 20rpx;
+}
+
+.nutrition-item {
+  margin-bottom: 30rpx;
+}
+
+.nutrition-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+
+.nutrition-name {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.nutrition-percentage {
+  font-size: 24rpx;
+  color: #4CAF50;
+}
+
+.progress-bar {
+  height: 16rpx;
+  background: #f5f5f5;
+  border-radius: 8rpx;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #4CAF50;
+  border-radius: 8rpx;
+  transition: width 0.3s ease;
+}
+
+.nutrition-desc {
+  font-size: 24rpx;
+  color: #666;
+  margin-top: 8rpx;
+}
+
+/* 食用建议样式 */
+.consumption-section {
+  margin-top: 30rpx;
+}
+
+.consumption-list {
+  margin-top: 20rpx;
+}
+
+.consumption-item {
+  background: #FFF3E0;
+  border-radius: 16rpx;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.consumption-title {
+  font-size: 28rpx;
+  color: #F57C00;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10rpx;
+}
+
+.consumption-desc {
+  font-size: 26rpx;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* 禁忌说明 */
+.contraindication-list {
+  margin-top: 20rpx;
+}
+
+.contraindication-item {
+  background: #FFF3E0;
+  border-radius: 16rpx;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.contraindication-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+
+.condition-icon {
+  font-size: 32rpx;
+  margin-right: 10rpx;
+}
+
+.condition-title {
+  font-size: 28rpx;
+  color: #F57C00;
+  font-weight: bold;
+}
+
+.condition-desc {
+  font-size: 26rpx;
+  color: #666;
+  line-height: 1.6;
+}
+
+.section {
+  background: white;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.title-info {
+  flex: 1;
+}
+
+.health-tag {
+  display: inline-block;
+  padding: 10rpx 30rpx;
+  border-radius: 30rpx;
+  font-size: 24rpx;
+}
+
+.health-tag.safe {
+  background: #4CAF50;
+  color: white;
+}
+
+.health-tag.unsafe {
+  background: #f44336;
+  color: white;
+}
+
+.tips-content,
+.storage-content {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.6;
+} 

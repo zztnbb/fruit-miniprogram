@@ -1,0 +1,53 @@
+<view class="container">
+  
+
+  <!-- 安全标签 -->
+  <view class="section">
+    <view class="section-title">安全标签</view>
+    <view class="tag-list">
+      <view class="tag-item {{item.selected ? 'selected' : ''}}" 
+            wx:for="{{safeTags}}" 
+            wx:key="id"
+            bindtap="toggleTag"
+            data-tag="{{item}}">
+        <text class="tag-name">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 危险标签 -->
+  <view class="section">
+    <view class="section-title">危险标签</view>
+    <view class="tag-list">
+      <view class="tag-item danger {{item.selected ? 'selected' : ''}}" 
+            wx:for="{{dangerTags}}" 
+            wx:key="id"
+            bindtap="toggleTag"
+            data-tag="{{item}}">
+        <text class="tag-name">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 已选标签 -->
+  <view class="section" wx:if="{{selectedTags.length > 0}}">
+    <view class="section-title">已选择的标签</view>
+    <view class="tag-list">
+      <view class="tag-item {{item.type === 'danger' ? 'danger' : ''}} selected" 
+            wx:for="{{selectedTags}}" 
+            wx:key="id">
+        <text class="tag-name">{{item.name}}</text>
+        <text class="tag-delete" 
+              catchtap="removeTag" 
+              data-tag-id="{{item.id}}">×</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 提交按钮 -->
+  <view class="footer">
+    <button class="submit-btn" bindtap="onSubmit" disabled="{{selectedTags.length === 0}}">
+      确认选择
+    </button>
+  </view>
+</view> 
